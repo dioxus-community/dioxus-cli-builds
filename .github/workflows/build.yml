@@ -26,6 +26,6 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
-        name: dx
+        name: dx-${{ matrix.os }}
         path: './target/release/dx*'
         if-no-files-found: 'error'

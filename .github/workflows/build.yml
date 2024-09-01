@@ -21,6 +21,9 @@ jobs:
         repository: 'DioxusLabs/Dioxus'
         ref: 'v0.5.6'
 
+    - name: Update deps
+      run: cargo update
+
     - name: Build
       run: cargo build --package dioxus-cli --release
 
